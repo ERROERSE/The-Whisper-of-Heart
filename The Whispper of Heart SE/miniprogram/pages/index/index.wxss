@@ -7,7 +7,7 @@ page {
   justify-content: flex-start;
 }
 
-.userinfo, .uploader, .tunnel {
+.userinfo, .uploader, .tunnel, .mentalTest {
   margin-top: 40rpx;
   height: 140rpx;
   width: 100%;
@@ -45,7 +45,7 @@ page {
   border: none;
 }
 
-.uploader, .tunnel {
+.uploader, .tunnel, .mentalTest {
   height: auto;
   padding: 0 0 0 40rpx;
   flex-direction: column;
