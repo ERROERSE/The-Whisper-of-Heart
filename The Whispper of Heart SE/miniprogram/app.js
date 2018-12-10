@@ -1,5 +1,6 @@
 //app.js
 App({
+  isDoc: false,
   onLaunch: function () {
     
     if (!wx.cloud) {
