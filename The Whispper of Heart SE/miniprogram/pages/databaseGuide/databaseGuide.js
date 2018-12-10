@@ -99,6 +99,9 @@ Page({
         this.setData({
           count: newCount
         })
+        wx.showToast({
+          title: '新增计数成功',
+        })
       },
       fail: err => {
         icon: 'none',

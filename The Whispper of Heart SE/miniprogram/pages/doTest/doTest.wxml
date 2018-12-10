@@ -1,2 +1,15 @@
-<!--miniprogram/pages/doTest/doTest.wxml-->
-<text>miniprogram/pages/doTest/doTest.wxml</text>
+<!--miniprogram/pages/doTest/doTest.wxml 这里是做心理测试的页面-->
+<view >
+    <view >
+        <text>{{queryName}}</text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{queryTest}}"  value="{{queryTest}}" >
+                    <text>{{queryTest[0]}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+</view>

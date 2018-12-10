@@ -1,2 +1,2 @@
-<!--miniprogram/pages/checkpage/checkpage.wxml-->
+<!--miniprogram/pages/checkpage/checkpage.wxml 这里是次要页面，也是主页面用tabBar能够直接访问的页面-->
 <text>miniprogram/pages/checkpage/checkpage.wxml</text>
