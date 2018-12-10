@@ -16,7 +16,8 @@
     "pages/inquiry/inquiry",
     "pages/therapist/therapist",
     "pages/checkTips/checkTips",
-    "pages/userpage/userpage"
+    "pages/userpage/userpage",
+    "pages/inquiry/addinquiry"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

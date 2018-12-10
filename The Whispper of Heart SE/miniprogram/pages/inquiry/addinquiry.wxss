@@ -69,7 +69,6 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     margin-bottom: 20rpx;
-    width: 750rpx;
 }
 .process-hd{
     display: flex;
@@ -127,7 +126,6 @@
 }
 .process-item-ft{
     display: flex;
-    font-size: 9pt;
 }
 .service-detail-open{
     display: flex;
@@ -137,4 +135,57 @@
     padding: 25rpx;
     border-top: 1px solid #eee;
     color: #7acfa6;
+}
+.declare-context{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rpx;
+    overflow: hidden;
+}
+.declare-context-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.declare-context-title{
+    color: #888;
+    margin: 5rpx 0 10rpx 30rpx;
+}
+.declare-context-input {
+    border-bottom: 1px solid #e5e5e5;
+    height: 88rpx;
+    padding: 0 30rpx;
+}
+.declare-context-input input{
+    height: 88rpx;
+}
+.declare-context-input.error{
+    background: rgba(231, 138, 176, 0.06);
+}
+.declare-context-textarea{
+    padding: 30rpx;
+    width: 100%;
+    min-height: 200rpx;
+    box-sizing:border-box;
+}
+.declare-context-textarea.error{
+    background: rgba(231, 138, 176, 0.06);
+}
+.submit-declare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40rpx 3%;
+    height: 80rpx;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #7acfa6;
+    color: #fff;
+    font-size: 12pt;
+}
+.submit-declare:active{
+    opacity: .8;
 }

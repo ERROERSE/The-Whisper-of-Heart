@@ -1,0 +1,25 @@
+<!--bx.wxml-->
+<view class="container">
+    <view class="service-nav">
+        <view class="service-nav-item service-apply-btn">
+            <!-- <image class="service-apply-icon" src="/images/core/bx.png"></image> -->
+            <text>我有新的提问</text>
+        </view> 
+    </view>
+    <!-- <input type="text" name="firstname" value="请输入标题"></input>
+    <form type="text" value="请输入内容"></form> -->
+
+        <view class="declare-context">
+            <text class="declare-context-title">请填写你的问题</text>
+            <view class="declare-context-panel">
+                <view class="declare-context-input {{(showError&&!formData.Title)?'error':''}}">
+                    <input placeholder="请输入报修标题" bindinput="listenerTitle"/>
+                </view>
+                <textarea cursor-spacing="50" class="declare-context-textarea {{(showError&&!formData.Content)?'error':''}}" placeholder="请输入具体内容" bindinput="listenerTextarea"></textarea>
+            </view>
+        </view>
+
+        <button class="submit-declare" bindtap="submitApply">
+            <text>提交问题</text>
+        </button>
+</view>

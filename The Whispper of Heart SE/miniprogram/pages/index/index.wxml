@@ -21,12 +21,19 @@
     </navigator>
   </view>
 
-  <!-- 开始测试 -->
+  <!-- 咨询医师 -->
   <view class="mentalTest">
-    <navigator class="uploader-text" url="../testpage/testpage" open-type="navigate">
-      <text>预约医师</text>
+    <navigator class="uploader-text" url="../inquiry/inquiry" open-type="navigate">
+      <text>咨询医师</text>
     </navigator>
   </view>
+
+    <!-- 测试用 -->
+  <!-- <view class="mentalTest">
+    <navigator class="uploader-text" url="../inquiry/addinquiry" open-type="navigate">
+      <text>测试用</text>
+    </navigator>
+  </view> -->
 
   <!-- 上传图片 -->
   <!-- <view class="uploader">

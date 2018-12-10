@@ -17,6 +17,6 @@
     <!-- <view>1111</view> -->
     <!-- <view>2{{isDoc}}</view> -->
     <button class="register" bindtap='registerDoc' wx:if="{{isDoc === false}}">注册成为医师</button>
-    <button class="register" bindtap='checkappointment' wx:if="{{isDoc === true}}">查看谁预约了我？(未完成)</button>
+    <!-- <button class="register" bindtap='checkappointment' wx:if="{{isDoc === true}}">查看谁预约了我？(未完成)</button> -->
   </view>
 </view>
