@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+ <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>{{userInfo.nickName}}</view>
+    <!-- <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view> -->
+  </view>
+
+  <view>
+    <!-- <view>1111</view> -->
+    <!-- <view>2{{isDoc}}</view> -->
+    <button class="register" bindtap='registerDoc' wx:if="{{isDoc === false}}">注册成为医师</button>
+    <!-- <button class="register" bindtap='checkappointment' wx:if="{{isDoc === true}}">查看谁预约了我？(未完成)</button> -->
+  </view>
+</view>

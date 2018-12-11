@@ -1,0 +1,57 @@
+<!--miniprogram/pages/inquiry/inquiry.wxml-->
+
+<!-- <view class="container">
+  <!--讨论区列表-->
+  <!-- <view class="content">
+    <block wx:for="{{active.data}}" wx:key="item._id">
+        <view class="list-item {{item.type}}">
+          <view class="list-item-left">
+            <text class="list-item-title">{{item.title}}</text>
+            <text class="service-detail-open">{{item.content}}</text>
+          </view>
+        </view>
+    </block>
+  </view>
+</view>  -->
+
+<!--bx.wxml-->
+<view class="container">
+    <view class="service-nav">
+        <navigator class="service-nav-item service-apply-btn" url="addinquiry">
+            <!-- <image class="service-apply-icon" src="/images/core/bx.png"></image> -->
+            <text>我有新的提问</text>
+        </navigator> 
+    </view>
+
+        <text class="service-process-title">申报记录（{{count}}条）</text>
+        
+        <block wx:for="{{active.data}}" wx:key="item._id">
+
+            <view class="process review-process">
+                <view class="process-hd">
+
+                    <view class="order-number-name">
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="process-state">
+                        <text class="process-state-name">{{item.title}}</text>
+                    </view>
+                </view>
+
+                    <view class="process-item">
+                        <view class="process-item-ft">
+                            <text class="process-item-info">{{item.time}}</text>
+                        </view>
+                    </view>
+
+                     <view class="service-detail-open">
+                        <text>{{item.content}}</text>
+                    </view>
+                    
+                </view> 
+
+                   
+             </block>
+
+
+</view>

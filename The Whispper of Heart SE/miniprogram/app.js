@@ -1,5 +1,6 @@
 //app.js
 App({
+  isDoc: false,
   onLaunch: function () {
     
     if (!wx.cloud) {
@@ -11,5 +12,27 @@ App({
     }
 
     this.globalData = {}
+  },
+    getUserInfo: function (cb) {
+    var that = this
+    if (this.globalData.userInfo) {
+      console.log('这里是空的')
+      typeof cb == "function" && cb(this.globalData.userInfo)
+    } else {
+      //调用登录接口
+      wx.login({
+        success: function () {
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res);
+              that.globalData.encryptedData = res.encryptedData;
+              that.globalData.iv = res.iv;
+              that.globalData.userInfo = res.userInfo
+              typeof cb == "function" && cb(that.globalData.userInfo)
+            }
+          })
+        }
+      })
+    }
   }
 })
