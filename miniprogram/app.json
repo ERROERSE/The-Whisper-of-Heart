@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/selectTest/selectTest",
+    "pages/userConsole/userConsole",
+    "pages/testpage/testpage",
+    "pages/testans/testans",
+    "pages/doTest/doTest",
+    "pages/checkpage/checkpage",
+    "pages/checkTest/checkTest",
+    "pages/authpage/authpage",
+    "pages/inquiry/inquiry",
+    "pages/therapist/therapist",
+    "pages/checkTips/checkTips",
+    "pages/userpage/userpage",
+    "pages/inquiry/addinquiry"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "心声 Demo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "测试",
+        "iconPath": "figure/icon/test.png",
+        "selectedIconPath": "figure/icon/test-selected.png"
+      },
+      {
+        "pagePath": "pages/userpage/userpage",
+        "text": "我",
+        "iconPath": "figure/icon/user.png",
+        "selectedIconPath": "figure/icon/user-selected.png"
+      }
+    ],
+    "selectedColor": "blue"
+  }
+}

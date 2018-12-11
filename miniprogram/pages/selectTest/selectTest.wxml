@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 权威心理测试 -->
+  <view class="mentalTest">
+    <navigator class="uploader-text" url="../testpage/testpage" open-type="navigate">
+      <text>权威测试</text>
+    </navigator>
+  </view>
+
+  <!-- 快速心理测试 -->
+  <view class="mentalTest">
+    <navigator class="uploader-text" url="../testpage/testpage" open-type="navigate">
+      <text>快速测试</text>
+    </navigator>
+  </view>
+
+</view>
