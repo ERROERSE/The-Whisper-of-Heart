@@ -13,7 +13,7 @@
             <text class="declare-context-title">请填写你的问题</text>
             <view class="declare-context-panel">
                 <view class="declare-context-input {{(showError&&!formData.Title)?'error':''}}">
-                    <input placeholder="请输入报修标题" bindinput="listenerTitle"/>
+                    <input placeholder="请输入标题" bindinput="listenerTitle"/>
                 </view>
                 <textarea cursor-spacing="50" class="declare-context-textarea {{(showError&&!formData.Content)?'error':''}}" placeholder="请输入具体内容" bindinput="listenerTextarea"></textarea>
             </view>
