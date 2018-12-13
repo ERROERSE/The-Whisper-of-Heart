@@ -1,5 +1,4 @@
 <!--index.wxml-->
-<view class="container">
 
   <!-- 用户 openid -->
  <view class="userinfo">
@@ -13,7 +12,7 @@
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
   </view>
-
+  
   <!-- 开始测试 -->
   <view class="mentalTest">
     <navigator class="uploader-text" url="../selectTest/selectTest" open-type="navigate">
@@ -60,4 +59,3 @@
     </navigator>
   </view> -->
 
-</view>

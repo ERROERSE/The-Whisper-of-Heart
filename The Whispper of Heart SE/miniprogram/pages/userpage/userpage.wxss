@@ -1,20 +1,27 @@
 /* pages/userConsole/userConsole.wxss */
 
+
+
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: rgb(126, 126, 126);
+  background: rgba(73, 185, 129, 0.1);
+  width: 100%;
+  height: 320rpx;
 }
 
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin: 50rpx;
   border-radius: 50%;
+  background-size: contain;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: rgb(126, 126, 126);
 }
 
 .usermotto {
