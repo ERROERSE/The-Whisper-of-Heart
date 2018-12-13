@@ -5,7 +5,7 @@
   <view class="question">
     <text>问题{{step+1}}:{{ques}}</text>
   </view>
-  <view class="explaination">
+  <view class="explanation">
     <view >
     <text bindtap="check">检查</text>
     </view>

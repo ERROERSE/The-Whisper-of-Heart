@@ -36,7 +36,7 @@
   text-align: left;
 }
 
-.explaination {
+.explanation {
   margin-top: 0rpx;
   height: contain;
   width: 100%;
