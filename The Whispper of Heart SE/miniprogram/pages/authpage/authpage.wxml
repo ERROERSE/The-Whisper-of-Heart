@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 <!--miniprogram/pages/authpage/authpage.wxml-->
+=======
+<!--miniprogram/pages/authpage/authpage.wxml--这是认证成为心理咨询师的界面>
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
 <text>miniprogram/pages/authpage/authpage.wxml</text>

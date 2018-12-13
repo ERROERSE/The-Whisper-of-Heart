@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* miniprogram/pages/testpage.wxss */
 .container{
     background-color: #f7f7f7;
@@ -45,3 +46,6 @@
   justify-content: left;
   text-align: left;
 }
+=======
+/* miniprogram/pages/testpage.wxss */
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c

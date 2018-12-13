@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 <!--miniprogram/pages/checkTest/checkTest.wxml-->
+=======
+<!--miniprogram/pages/checkTest/checkTest.wxml 这里是查看心理测试结果界面-->
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
 <text>miniprogram/pages/checkTest/checkTest.wxml</text>

@@ -3,6 +3,14 @@
     "pages/index/index",
     "pages/selectTest/selectTest",
     "pages/userConsole/userConsole",
+<<<<<<< HEAD
+=======
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
     "pages/testpage/testpage",
     "pages/testans/testans",
     "pages/doTest/doTest",
@@ -11,9 +19,13 @@
     "pages/authpage/authpage",
     "pages/inquiry/inquiry",
     "pages/therapist/therapist",
+<<<<<<< HEAD
     "pages/checkTips/checkTips",
     "pages/userpage/userpage",
     "pages/inquiry/addinquiry"
+=======
+    "pages/checkTips/checkTips"
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -16,7 +16,10 @@ App({
     getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
+<<<<<<< HEAD
       console.log('这里是空的')
+=======
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
       typeof cb == "function" && cb(this.globalData.userInfo)
     } else {
       //调用登录接口

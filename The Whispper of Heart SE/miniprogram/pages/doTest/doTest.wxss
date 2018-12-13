@@ -1,1 +1,12 @@
 /* miniprogram/pages/doTest/doTest.wxss */
+<<<<<<< HEAD
+=======
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c

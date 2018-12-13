@@ -5,16 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     'loading': true,
     'active.data': [],
     'active.showMore': true,
     'active.remind': '上滑加载更多',
     'page': 0
+=======
+
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+<<<<<<< HEAD
   onLoad: function () {
     const db = wx.cloud.database()
     db.collection('topic').get({
@@ -52,6 +57,10 @@ Page({
         console.error('[数据库] [查询记录] 失败：', err)
       }
     })
+=======
+  onLoad: function (options) {
+
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
   },
 
   /**
@@ -101,9 +110,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+<<<<<<< HEAD
   },
 
   getTopic: function() {
 
+=======
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
   }
 })

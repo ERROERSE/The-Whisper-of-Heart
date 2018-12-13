@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**bx.wxss**/
 .container{
     background-color: #f7f7f7;
@@ -138,3 +139,6 @@
     border-top: 1px solid #eee;
     color: #7acfa6;
 }
+=======
+/* miniprogram/pages/inquiry/inquiry.wxss */
+>>>>>>> b724e3c8262e574cf121bb8701330187dc10783c
