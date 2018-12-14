@@ -6,8 +6,8 @@
     <view class="page__bd">
         <view class="section section_gap">
             <radio-group class="radio-group" bindchange="radioChange">
-                <radio class="radio" wx:for-items="{{queryTest}}"  value="{{queryTest}}" >
-                    <text>{{queryTest[0]}}</text>
+               <radio class="radio" wx:for-items="{{queryTest}}" wx:key="point" value="{{item.point}}" checked="{{item.checked}}">
+                    <text>{{item.stem}}</text>
                 </radio>
             </radio-group>
         </view>

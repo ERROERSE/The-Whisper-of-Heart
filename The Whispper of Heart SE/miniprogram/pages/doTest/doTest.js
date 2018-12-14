@@ -108,9 +108,9 @@ Page({
         const { data } = res;
         if(testNum < data.length && data[testNum] != undefined){
         var test = [];
-        test.push(data[testNum].选项A)
-        test.push(data[testNum].选项B)
-        test.push(data[testNum].选项C)
+        test.push({ choice: 'A', stem: data[testNum].选项A, point: 0, checked: false})
+        test.push({ choice: 'B', stem: data[testNum].选项B, point: 1, checked: false})
+        test.push({ choice: 'C', stem: data[testNum].选项C, point: 2, checked: false})
         this.setData({                  //获取题目，按照题号顺序排序
           queryName: data[testNum].题号 + '. ' + data[testNum].题目,
           queryTest: test
@@ -131,10 +131,19 @@ Page({
   /**
  * 选择题目函数
  */
-radioChange : function () {
+radioChange : function (e) {
   console.log(testNum)
   this.setTest()
   console.log(this.data.queryTest)
+  var test = this.data.queryTest
+  for(var i=0;i<test.length;i++)
+  {
+    if(test[i].checked) 
+      test[i].checked = false
+}
+this.setData({
+  queryTest: test
+})
 }
 })
 
