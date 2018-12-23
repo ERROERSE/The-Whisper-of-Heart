@@ -4,6 +4,7 @@
     "pages/selectTest/selectTest",
     "pages/userConsole/userConsole",
     "pages/testpage/testpage",
+    "pages/testpage/showresult",
     "pages/testans/testans",
     "pages/doTest/doTest",
     "pages/checkpage/checkpage",

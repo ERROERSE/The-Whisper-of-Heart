@@ -1,5 +1,10 @@
 //app.js
 App({
+
+  globalData:{
+    'inform':'' //用来获取云函数返回的信息并传至下一个页面使用
+  },
+
   isDoc: false,
   onLaunch: function () {
     
@@ -11,7 +16,9 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      'sclResult':[]
+    }
   },
     getUserInfo: function (cb) {
     var that = this
