@@ -10,11 +10,15 @@ Page({
   data: {
     'step': 87,
     'ques': '',
-    'ans': [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-      5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+    'ans': [3, 5, 5, 1, 2, 2, 1, 2, 5, 4,
+     5, 5, 5, 4, 4, 5, 4, 1, 2, 2,
+     1, 4, 4, 1, 3, 1, 2, 4, 5, 2,
+     3, 1, 4, 5, 3, 1, 2, 4, 4, 4, 
+     1, 5, 5, 5, 3, 5, 1, 4, 1, 1, 
+     2, 4, 5, 5, 2, 1, 5, 3, 3, 1, 
+     4, 3, 4, 2, 5, 1, 1, 2, 4, 5, 
+     4, 1, 2, 1, 3, 5, 2, 3, 1, 5, 
+     3, 4, 4, 5, 2, 1, 3, 1, 4, 1
     ],
     'show': '下一题',
     'turn':'',
@@ -106,6 +110,8 @@ Page({
     console.log(this.data.ques)
   },
 */
+
+/* 选择下一题的函数，包含问卷填写完成后的最终提交函数 */
   next: function(){
     if (this.data.step == 88){
       this.setData({show: '最终提交'})
@@ -128,9 +134,11 @@ Page({
             'result': res.result
           })
           const db = wx.cloud.database()
+          var mytime = new Date()
           db.collection('SCL-90-test-result').add({
             data: {
-              score: this.data.result.result},
+              score: this.data.result.result,
+              time: mytime.toLocaleString()},
             success: res=>{
               console.log('[数据库] [新增记录] 成功')
             },
@@ -192,9 +200,13 @@ Page({
     }
   },
 
+/* 选择上一题的函数 */
   before: function(){
-    if (this.data.step>0){
-      this.setData({step:this.data.step-1})
+    if (this.data.step>0){ //如果是第一题则无法再前往上一题
+      if (this.data.step == 89){
+        this.setData({show: '下一题'})} //改变按钮的文本属性
+      this.setData({step:this.data.step-1}) 
+      console.log(this.data.step)
       const db=wx.cloud.database()
       db.collection('SCL-90-test').where({
         num: this.data.step+1

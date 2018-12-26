@@ -1,7 +1,7 @@
 /**selectTest.wxss**/
 
 page {
-  background: #f6f6f6;
+  background: rgba(73, 185, 129, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,9 +12,8 @@ page {
   height: 140rpx;
   width: 100%;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: none;
-  border-right: none;
+  border: none;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,7 +56,7 @@ page {
   width: 100%;
   line-height: 52px;
   font-size: 34rpx;
-  color: #007aff;
+  color: rgb(79, 167, 124);
 }
 
 .uploader-container {
