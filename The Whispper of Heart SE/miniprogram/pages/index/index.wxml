@@ -27,6 +27,17 @@
     </navigator>
   </view>
 
+<scroll-view scroll-x="true" bindscrolltoupper="{{scrolltoupper}}" bindscrolltolower="{{scrolltolower}}" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollLeft}}">
+  <view class="scroll-x">
+   <!-- <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="../../figure/icon/test.png"></image> -->
+    <view wx:for-items="{{scrolls}}" wx:key="title">
+      <view id="{{item.tag}}" class="title}}">{{item.title}}</view>
+     <view id="{{item.tag}}" class="{{item.tag}}"> {{item.tips}}</view>
+    </view>
+  </view>
+</scroll-view>
+
+
     <!-- 测试用 -->
   <!-- <view class="mentalTest">
     <navigator class="uploader-text" url="../inquiry/addinquiry" open-type="navigate">

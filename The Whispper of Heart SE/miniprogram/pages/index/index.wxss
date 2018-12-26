@@ -137,3 +137,47 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+.button
+{
+  margin: 20rpx;
+}
+.scroll-x {
+  display: flex;
+  flex-direction: row; 
+}
+.scroll-y {
+  display: flex;
+  flex-direction: column; 
+}
+.title
+{ margin-top: 100rpx;
+  text-align: center;
+  font-weight: bolder;
+  align-items: center;
+  width: 650rpx;
+  height: 50rpx;
+  font-size: 35rpx;
+  color: rgb(103, 189, 147);
+  /* background: rgba(255, 255, 255, 1); */
+  /* border:1px solid rgb(106, 165, 253); */
+  margin-left:25px; 
+  margin-right:25px;
+}
+
+.green,.red,.yellow
+{
+  text-indent:70rpx;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: justify;
+  width: 650rpx;
+  height: 400rpx;
+  line-height: 22px;
+  font-size: 35rpx;
+  color: rgb(103, 189, 147);
+  /* background: rgba(255, 255, 255, 1) url("../../figure/icon/cat.jpg") no-repeat fixed top; */
+  /* background-image: url('../../../figure/icon/cat.jpg'); */
+  margin-left:25px; 
+  margin-right:25px;
+}
