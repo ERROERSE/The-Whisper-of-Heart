@@ -5,7 +5,8 @@
   <view class="question">
     <text>问题{{step+1}}:{{ques}}</text>
   </view>
-  <view class="explanation">
+
+  <view class="explaination">
     <view >
     <text bindtap="check">检查</text>
     </view>
@@ -38,6 +39,10 @@
 
     <view>
       <text style='color: green' bindtap='next'>{{show}}</text>
+    </view>
+
+    <view>
+      <text style='color: green' bindtap='before'>上一题</text>
     </view>
 
   </view>
