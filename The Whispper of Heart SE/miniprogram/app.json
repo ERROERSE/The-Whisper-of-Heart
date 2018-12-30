@@ -15,7 +15,9 @@
     "pages/checkTips/checkTips",
     "pages/userpage/userpage",
     "pages/inquiry/addinquiry",
-    "pages/showHistory/showHistory"
+    "pages/showHistory/showHistory",
+    "pages/quickTest/quickTest",
+    "pages/quickTest/quick"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
