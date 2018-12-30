@@ -1,0 +1,48 @@
+/* miniprogram/pages/quickTest/quick.wxss */
+
+.container{
+    background-color: #f7f7f7;
+    padding-top: 40rpx;
+}
+
+.question {
+  background-color: rgba(122,207,166,.1);
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  border: none;
+  text-indent: 10%;
+  color: #62a082;
+  border-left: 40rpx;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+}
+
+.answer {
+  background-color:  #f7f7f7;
+  margin-top: 0rpx;
+  height: contain;
+  width: 100%;
+  border: none;
+  text-indent: 10%;
+  color: #6b6b6b;
+  border-left: 40rpx;
+  border-right: none;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.explaination {
+  margin-top: 0rpx;
+  height: contain;
+  width: 100%;
+  text-indent: 10%;
+  color: #6b6b6b;
+  justify-content: left;
+  text-align: left;
+}
