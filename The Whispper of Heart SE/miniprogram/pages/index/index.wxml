@@ -31,7 +31,7 @@
   <view class="scroll-x">
    <!-- <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="../../figure/icon/test.png"></image> -->
     <view wx:for-items="{{scrolls}}" wx:key="title">
-      <view id="{{item.tag}}" class="title}}">{{item.title}}</view>
+      <view id="{{item.tag}}" class="title">{{item.title}}</view>
      <view id="{{item.tag}}" class="{{item.tag}}"> {{item.tips}}</view>
     </view>
   </view>

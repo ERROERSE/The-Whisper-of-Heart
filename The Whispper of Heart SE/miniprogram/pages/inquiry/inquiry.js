@@ -17,7 +17,7 @@ Page({
    */
   onLoad: function () {
     const db = wx.cloud.database()
-    db.collection('topic').get({
+    db.collection('topic').orderBy('time','desc').get({
       success: res => {
         this.setData({
           'active.data': res.data
