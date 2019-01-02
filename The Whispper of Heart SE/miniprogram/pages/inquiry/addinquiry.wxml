@@ -19,7 +19,7 @@
             </view>
         </view>
 
-        <button class="submit-declare" bindtap="submitApply">
+        <button class="submit-declare" bindtap="submitApply" disabled='{{disabled}}'>
             <text>提交问题</text>
         </button>
 </view>

@@ -1,0 +1,87 @@
+<!--miniprogram/pages/inquiry/inquiry.wxml-->
+
+<!--bx.wxml-->
+<view class="container">
+    <!-- <view class="service-nav">
+        <navigator class="service-nav-item service-apply-btn" url="addinquiry?fa={{_id}}"> -->
+            <!-- <image class="service-apply-icon" src="/images/core/bx.png"></image> -->
+            <!-- <text>我有回答</text>
+        </navigator> 
+    </view> -->
+
+        <!-- <text class="service-process-title">申报记录（{{count}}条）</text> -->
+        <!--  输出题目 -->
+        <block wx:for="{{question}}" wx:key="item._id">
+            <view class="process review-process process-state-finished" >
+                <!-- <view class="process-hd"> -->
+
+                    <!-- <view class="order-number-name">
+                        <text>{{item.name}}</text>
+                    </view> -->
+                    <!-- <view class="process-state service-apply-btn">
+                        <text class="process-state-name">{{item.title}}</text>
+                    </view>
+                </view> -->
+
+    <view class="service-nav">
+        <view class="service-nav-item service-apply-btn">
+            <!-- <image class="service-apply-icon" src="/images/core/bx.png"></image> -->
+            <text>{{item.title}}</text>
+        </view> 
+    </view>
+
+                    <view class="process-item">
+                        <view class="process-item-ft">
+                            <text class="process-item-info">{{item.time}}</text>
+                        </view>
+                    </view>
+
+                     <view class="process-state-finished service-detail-open ">
+                        <text>{{item.content}}</text>
+                    </view>
+                    
+                </view>      
+             </block>
+
+<block wx:for="{{answer}}" wx:key="item._id">
+            <view class="process review-process" >
+                <view class="process-hd">
+
+                    <!-- <view class="order-number-name">
+                        <text>{{item.name}}</text>
+                    </view> -->
+                    <view class="process-state service-detail-open">
+                        <text class="process-state-name">{{item.title}}</text>
+                    </view>
+                </view>
+
+                    <view class="process-item">
+                        <view class="process-item-ft">
+                            <text class="process-item-info">{{item.time}}</text>
+                        </view>
+                    </view>
+
+                     <view class="">
+                        <text>{{item.content}}</text>
+                    </view>
+                    
+                </view>                    
+             </block>
+
+<view class="container">
+        <view class="declare-context">
+            <text class="declare-context-title">请填写你的回答</text>
+            <view class="declare-context-panel">
+                <view class="declare-context-input {{(showError&&!formData.Title)?'error':''}}">
+                    <input placeholder="这里填回答的题目啊" bindinput="listenerTitle"/>
+                </view>
+                <textarea cursor-spacing="50" class="declare-context-textarea {{(showError&&!formData.Content)?'error':''}}" placeholder="友善的社区需要有爱的回答哦~" bindinput="listenerTextarea"></textarea>
+            </view>
+        </view>
+
+        <button class="submit-declare" bindtap="submitApply" disabled='{{disabled}}'>
+            <text>提交回答</text>
+        </button>
+</view>
+
+</view>

@@ -20,7 +20,9 @@ App({
     this.globalData = {
       'sclResult':[]
     }
+
   },
+
     getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
@@ -43,4 +45,6 @@ App({
       })
     }
   }
+
+
 })
