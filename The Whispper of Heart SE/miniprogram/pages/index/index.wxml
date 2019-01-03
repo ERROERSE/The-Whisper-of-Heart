@@ -29,10 +29,12 @@
 
 <scroll-view scroll-x="true" bindscrolltoupper="{{scrolltoupper}}" bindscrolltolower="{{scrolltolower}}" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollLeft}}">
   <view class="scroll-x">
+  <view>{{yep}}</view>
    <!-- <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="../../figure/icon/test.png"></image> -->
-    <view wx:for-items="{{scrolls}}" wx:key="title">
-      <view id="{{item.tag}}" class="title}}">{{item.title}}</view>
-     <view id="{{item.tag}}" class="{{item.tag}}"> {{item.tips}}</view>
+    <view wx:for-items="{{scrolls}}" wx:key="tag">
+      
+      <view id="item[0].tag" class="title">{{item[0].title}}</view>
+     <view id="{{item[0].tag}}" class="{{item[0].tag}}"> {{item[0].tips}}</view>
     </view>
   </view>
 </scroll-view>
