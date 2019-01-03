@@ -36,9 +36,16 @@ Page({
   },
 
   begin: function () {
+    if (this.data.testId != 0){
     wx.redirectTo({
       url: '../quickTest/quick',
-    })
+    })}
+    else{
+      wx.showToast({
+        icon: 'none',
+        title: '请选择一个测试方面'
+      })
+    }
   },
 
   onLoad: function (options) {
