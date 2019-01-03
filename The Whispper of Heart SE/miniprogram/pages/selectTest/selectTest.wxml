@@ -10,7 +10,7 @@
 
   <!-- 快速心理测试 -->
   <view class="mentalTest">
-    <navigator class="uploader-text" url="../testpage/testpage" open-type="navigate">
+    <navigator class="uploader-text" url="../quickTest/quickTest" open-type="navigate">
       <text>快速测试</text>
     </navigator>
   </view>
