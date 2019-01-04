@@ -1,6 +1,6 @@
 /* miniprogram/pages/testpage.wxss */
 .container{
-    background-color: #f7f7f7;
+    background-color:#f7f7f7;
     padding-top: 40rpx;
 }
 
@@ -22,6 +22,7 @@
 }
 
 .answer {
+  line-height:30px;
   background-color:  #f7f7f7;
   margin-top: 0rpx;
   height: contain;
@@ -33,7 +34,15 @@
   border-right: none;
   align-items: center;
   justify-content: left;
-  text-align: left;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(46, 94, 34);
+}
+
+.answer0{
+  border: 0.5px solid rgb(173, 170, 170);
+  margin:10px 50px 15px 60px;
+  align-items: center;
 }
 
 .explaination {
@@ -43,5 +52,5 @@
   text-indent: 10%;
   color: #6b6b6b;
   justify-content: left;
-  text-align: left;
+  text-align: center;
 }

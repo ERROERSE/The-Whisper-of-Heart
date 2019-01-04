@@ -5,13 +5,19 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546595453349&di=d6a313d60e6278d5c58937f275864074&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F29%2F63%2F59239c4469dc2_610.jpg');
+  background-position-y: 160rpx;
+  background-position-x: center;
+  background-size: 120% 70%;
+  background-repeat: no-repeat;
 }
 
 .userinfo, .uploader, .tunnel, .mentalTest {
   margin-top: 40rpx;
   height: 140rpx;
   width: 100%;
-  background: #fff;
+  background: rgb(255,255,255);
+  opacity: 0.8;
   border: none;
   border-left: none;
   border-right: none;
@@ -53,13 +59,14 @@ page {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  font-weight: bolder;
 }
 
 .uploader-text, .tunnel-text {
   width: 100%;
   line-height: 52px;
   font-size: 32rpx;
-  color: rgb(103, 189, 147);
+  color: rgb(35, 59, 47);
 }
 
 .uploader-container {
@@ -136,4 +143,54 @@ page {
   font-size: 24rpx;
   line-height: 36rpx;
   word-break: break-all;
+}
+
+.button
+{
+  margin: 20rpx;
+}
+.scroll-x {
+  display: flex;
+  flex-direction: row; 
+  opacity: 0.7;
+}
+.scroll-y {
+  display: flex;
+  flex-direction: column; 
+  opacity: 0.7;
+  border: 1px dashed #000;
+}
+
+.title
+{ margin-top: 100rpx;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  width: 650rpx;
+  height: 50rpx;
+  font-size: 37rpx;
+  color: rgb(35, 59, 47);
+  /* background: rgba(255, 255, 255, 1); */
+  /* border:1px solid rgb(106, 165, 253); */
+  margin-left:25px; 
+  margin-right:25px;
+  
+}
+
+.green,.red,.yellow
+{
+  text-indent:70rpx;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: justify;
+  width: 650rpx;
+  height: 400rpx;
+  line-height: 22px;
+  font-size: 35rpx;
+  color: rgb(57, 104, 81);
+  /* background: rgba(255, 255, 255, 1) url("../../figure/icon/cat.jpg") no-repeat fixed top; */
+  /* background-image: url('../../../figure/icon/cat.jpg'); */
+  margin-left:25px; 
+  margin-right:25px;
+
 }

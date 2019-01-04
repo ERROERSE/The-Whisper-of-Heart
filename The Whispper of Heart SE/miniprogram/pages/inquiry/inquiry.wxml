@@ -23,17 +23,17 @@
         </navigator> 
     </view>
 
-        <text class="service-process-title">申报记录（{{count}}条）</text>
+        <!-- <text class="service-process-title">申报记录（{{count}}条）</text> -->
         
         <block wx:for="{{active.data}}" wx:key="item._id">
-
-            <view class="process review-process">
+          <navigator url="inquirydetail?qid={{item._id}}">
+            <view class="process review-process" >
                 <view class="process-hd">
 
-                    <view class="order-number-name">
+                    <!-- <view class="order-number-name">
                         <text>{{item.name}}</text>
-                    </view>
-                    <view class="process-state">
+                    </view> -->
+                    <view class="process-state service-detail-open">
                         <text class="process-state-name">{{item.title}}</text>
                     </view>
                 </view>
@@ -44,14 +44,17 @@
                         </view>
                     </view>
 
-                     <view class="service-detail-open">
+                     <view class="">
                         <text>{{item.content}}</text>
                     </view>
                     
                 </view> 
-
+          </navigator> 
                    
              </block>
+             <br></br>
+
+             
 
 
 </view>

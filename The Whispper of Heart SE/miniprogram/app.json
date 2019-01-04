@@ -4,6 +4,7 @@
     "pages/selectTest/selectTest",
     "pages/userConsole/userConsole",
     "pages/testpage/testpage",
+    "pages/testpage/showresult",
     "pages/testans/testans",
     "pages/doTest/doTest",
     "pages/checkpage/checkpage",
@@ -13,7 +14,12 @@
     "pages/therapist/therapist",
     "pages/checkTips/checkTips",
     "pages/userpage/userpage",
-    "pages/inquiry/addinquiry"
+    "pages/inquiry/addinquiry",
+    "pages/showHistory/showHistory",
+    "pages/quickTest/quickTest",
+    "pages/quickTest/quick",
+    "pages/register/register",
+    "pages/inquiry/inquirydetail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

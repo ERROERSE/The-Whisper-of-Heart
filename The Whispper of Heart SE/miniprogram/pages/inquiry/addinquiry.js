@@ -4,13 +4,15 @@ var app = getApp();
 Page({
   remind: '加载中',
   data: {
-    formData: {             //表单数据
-      // Id: '',         //统一认证码
+    formData: {       //表单数据
+      // Id: '',      //统一认证码
       Name: '',       //用户名
       Title: '',      //标题
-      Content: ''     //报修内容
+      Content: '',    //报修内容
+      father: '',
     },
-    showError: false
+    showError: false,
+    disabled: false
   },
   onLoad: function () {
     // console.log(app.globalData)
@@ -45,7 +47,9 @@ Page({
   },
 
   submitApply: function (e) {
-
+    this.setData({
+      'disabled': true
+    });
     // console.log(formData.Content.value);
 
     // if (!formData.Content){
@@ -78,7 +82,8 @@ Page({
         title: formData.Title,
         content: formData.Content,
         name: formData.Name,
-        time: myDate.toLocaleString()
+        time: myDate.toLocaleString(),
+        father: formData.father
       },
       success: res => {
         wx.showToast({
@@ -92,10 +97,18 @@ Page({
           title: '新增记录失败'
         })
         console.error('[数据库] [新增记录] 失败：', err)
+      },
+      complete: () => {
+        this.setData({
+          'disabled': false
+        })
       }
     }) ;
 
+
   }
+
+  
 
 });
 

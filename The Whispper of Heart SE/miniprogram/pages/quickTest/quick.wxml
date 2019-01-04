@@ -1,5 +1,4 @@
-<!--miniprogram/pages/testpage.wxml-->
-
+<!--miniprogram/pages/quickTest/quick.wxml-->
 
 <view class="container">
   <view class="question">
@@ -17,24 +16,24 @@
   </view>
 
   <view class = "answer">
-    <view class="answer0">
-      <text bindtap="chooseAnswer" data-id = '1'>  1  </text>
+    <view class= "answer0">
+      <text bindtap="chooseAnswer" data-id = '1'>1.</text>
     </view>
 
-    <view class="answer0">
-      <text bindtap="chooseAnswer" data-id = '2'>  2  </text>
+    <view class= "answer0">
+      <text bindtap="chooseAnswer" data-id = '2'>2.</text>
     </view>
 
-    <view class="answer0">
-      <text bindtap="chooseAnswer" data-id = '3'>  3  </text>
+    <view class= "answer0">
+      <text bindtap="chooseAnswer" data-id = '3'>3.</text>
     </view>
 
-    <view class="answer0">
-      <text bindtap="chooseAnswer" data-id = '4'>  4  </text>
+    <view class= "answer0">
+      <text bindtap="chooseAnswer" data-id = '4'>4.</text>
     </view>
 
-    <view class="answer0">
-      <text bindtap="chooseAnswer" data-id = '5'>  5  </text>
+    <view class= "answer0">
+      <text bindtap="chooseAnswer" data-id = '5'>5.</text>
     </view>
 
     <view>
@@ -47,6 +46,8 @@
 
   </view>
 
-
+  <view class="question">
+    <text>{{repo}}</text>
+  </view>
 
 </view>

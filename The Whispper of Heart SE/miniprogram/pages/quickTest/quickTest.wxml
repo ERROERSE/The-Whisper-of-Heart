@@ -1,0 +1,21 @@
+<view class="phone_one" bindtap="clickTest">
+  <view class="phone_personal">{{testType[testId]}}</view>
+</view>
+ 
+<view class="person_box">
+   <view class="phone_select" hidden="{{selectTest}}">
+    <view class="select_one" bindtap="mySelect" data-id="1">躯体健康测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="2">强迫症测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="3">人际关系敏感程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="4">抑郁程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="5">焦虑程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="6">敌对程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="7">恐惧程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="8">偏执程度测试</view>
+    <view class="select_one" bindtap="mySelect" data-id="9">精神病性程度测试</view>
+  </view>
+ </view>
+
+<view class="mentalTest">
+  <text class="uploader-text" bindtap="begin">开始测试！</text>
+</view>

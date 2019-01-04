@@ -1,0 +1,43 @@
+<view>
+<text>以下为您近几次测试结果的记录</text>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas1"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas2"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas3"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas4"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas5"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas6"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas7"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas8"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas9"></canvas>
+</view>
+
+<view>
+<canvas class="canvas" canvas-id="columnCanvas10"></canvas>
+</view>

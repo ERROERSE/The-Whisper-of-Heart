@@ -1,4 +1,4 @@
-// miniprogram/pages/testpage.js
+// miniprogram/pages/quickTest/quick.js
 
 const app = getApp()
 
@@ -9,21 +9,34 @@ Page({
    */
   data: {
     'step': 0,
+    'length': 0,
     'ques': '',
-    'ans': [
-    ],
+    'ans': [],
     'show': '下一题',
-    'turn':'',
-    'result':[]
+    'turn': '',
+    'result': [],
+    'repo':'',
+    'index': [[1, 4, 12, 27, 40, 42, 48, 49, 52, 53, 56, 58],[3, 9, 10, 28, 38, 45, 46, 51, 55, 65],
+              [6, 21, 34, 36, 37, 41, 61, 69, 73],[5, 14, 15, 20, 22, 26, 29, 30, 31, 32, 54, 71, 79],
+              [2, 17, 23, 33, 39, 57, 72, 78, 80, 86],[11, 24, 63, 67, 74, 81],
+              [13, 25, 47, 50, 70, 75, 82],[8, 18, 43, 68, 76, 83],
+              [7, 16, 35, 62, 77, 84, 85, 87, 88, 90],],
+    'total': [48, 40, 36, 52, 40, 24, 28, 24, 40],
+    'problem': ['躯体不适指数', '强迫症指数', '人际关系敏感程度', '抑郁指数', '焦虑指数', '敌对指数',
+      '恐惧指数', '偏执指数', '精神病性指数']
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+    this.setData({
+      length: this.data.index[app.globalData.testIndex-1].length
+    }) // 获取题目长度和该项的总分
+    console.log(this.data.total)
     const db = wx.cloud.database()
     db.collection('SCL-90-test').where({
-      num: this.data.step+1 // 返回对应题号的题目
+      num: this.data.index[app.globalData.testIndex-1][this.data.step] // 返回对应题号的题目
     }).get({
       success: res => {
         this.setData({
@@ -93,79 +106,46 @@ Page({
   chooseAnswer: function (e) {
     this.data.ans[this.data.step] = parseInt(e.currentTarget.dataset.id);
     wx.showToast({
-      title:'选择成功',
+      title: '选择成功',
     })
     console.log(e);
   },
 
-/*  check: function (){
-    console.log(this.data.ques)
-  },
-*/
+  /*  check: function (){
+      console.log(this.data.ques)
+    },
+  */
 
-/* 选择下一题的函数，包含问卷填写完成后的最终提交函数 */
-  next: function(){
-    if (this.data.step == 88){
-      this.setData({show: '最终提交'})
+  /* 选择下一题的函数，包含问卷填写完成后的最终提交函数 */
+  next: function () {
+    var length = this.data.length
+    if (this.data.step == length-2) {
+      console.log('gkd')
+      this.setData({ show: '最终提交' })
     }
-    if (this.data.step == 89) {
-      if (this.data.ans[this.data.step]!=null){
-        wx.cloud.callFunction({
-        name: 'SCL-90',
-        data: {
-          ans: this.data.ans
-        },
-        success: res => {
-          wx.showToast({
-            title: '提交成功',
-          })
-          var app=getApp()
-          app.globalData.inform=res.result.repo
-          console.log('全局变量获取成功',app.globalData.inform)
-          this.setData({
-            'result': res.result
-          })
-          const db = wx.cloud.database()
-          var mytime = new Date()
-          db.collection('SCL-90-test-result').add({
-            data: {
-              score: this.data.result.result,
-              time: mytime.toLocaleString()},
-            success: res=>{
-              console.log('[数据库] [新增记录] 成功')
-            },
-            fail: err=>{
-              console.error('[数据库] [新增记录] 失败')
-            }
-          })
-          console.log(res)
-          wx.redirectTo({
-            url: 'showresult'
-          })
-        },
-
-        fail: err => {
-          wx.showToast({
-            icon: 'none',
-            title: '调用失败',
-          })
+    if (this.data.step == length-1) {
+      if (this.data.ans[this.data.step] != null) {
+        var sum = 0
+        for (var i=0; i<this.data.length; i++){
+          sum = sum+parseInt(this.data.ans[i])-1
         }
-
-      })
+        this.setData({
+          repo: '经过快速测试你的' + JSON.stringify(this.data.problem[app.globalData.testIndex - 1]) + '为' + sum + '/' + this.data.total[app.globalData.testIndex - 1]
+        })
       }
       else {
         wx.showToast({
-          icon:'none',
+          icon: 'none',
           title: '请完成最后一题的作答'
         })
       }
     }
-      else {
-        if (this.data.ans[this.data.step]!=null){
-        this.setData({step: this.data.step+1})
+    else {
+      if (this.data.ans[this.data.step] != null) {
+        this.setData({ step: this.data.step + 1 })
         const db = wx.cloud.database()
         db.collection('SCL-90-test').where({
-          num: this.data.step+1
+          num: this.data.index[app.globalData.testIndex - 1][this.data.step]
         }).get({
           success: res => {
             this.setData({
@@ -181,27 +161,28 @@ Page({
             console.error('[数据库] [查询记录] 失败', err)
           }
         })
-        } 
-        else {
+      }
+      else {
         wx.showToast({
-        icon: 'none',
-        title: '请完成答题',
+          icon: 'none',
+          title: '请完成答题',
         })
       }
-    
+
     }
   },
 
-/* 选择上一题的函数 */
-  before: function(){
-    if (this.data.step>0){ //如果是第一题则无法再前往上一题
-      if (this.data.step == 89){
-        this.setData({show: '下一题'})} //改变按钮的文本属性
-      this.setData({step:this.data.step-1}) 
+  /* 选择上一题的函数 */
+  before: function () {
+    if (this.data.step > 0) { //如果是第一题则无法再前往上一题
+      if (this.data.step == this.data.length-1) {
+        this.setData({ show: '下一题' })
+      } //改变按钮的文本属性
+      this.setData({ step: this.data.step - 1 })
       console.log(this.data.step)
-      const db=wx.cloud.database()
+      const db = wx.cloud.database()
       db.collection('SCL-90-test').where({
-        num: this.data.step+1
+        num: this.data.index[app.globalData.testIndex - 1][this.data.step]
       }).get({
         success: res => {
           this.setData({
@@ -218,10 +199,10 @@ Page({
         }
       })
     }
-    else{
+    else {
       wx.showToast({
-        icon:'none',
-        title:'这已经是第一题了'
+        icon: 'none',
+        title: '这已经是第一题了'
       })
     }
 

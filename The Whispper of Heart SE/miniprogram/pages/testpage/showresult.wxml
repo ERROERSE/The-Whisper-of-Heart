@@ -1,0 +1,20 @@
+<!--miniprogram/pages/testpage.wxml-->
+<!--此页面纯用于展示单次问卷填写与提交的结果，并无他用-->
+
+<view class="container">
+  <view>
+    <text>以下为SCL-90测验的结果</text>
+  </view>
+
+  <view>
+    <text>{{info}}</text>
+  </view>
+ <canvas canvas-id='SCL-90' style='width:315px;height:430px;'></canvas>
+  <view class="mentalTest">
+    <view>
+      <text bindtap="exit">退出测试</text>
+    </view>
+  </view>
+
+
+</view>
