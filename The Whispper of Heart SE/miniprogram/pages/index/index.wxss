@@ -6,7 +6,7 @@ page {
   flex-direction: column;
   justify-content: flex-start;
   background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546595453349&di=d6a313d60e6278d5c58937f275864074&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F29%2F63%2F59239c4469dc2_610.jpg');
-  background-position-y: 200rpx;
+  background-position-y: 160rpx;
   background-position-x: center;
   background-size: 120% 70%;
   background-repeat: no-repeat;
@@ -59,6 +59,7 @@ page {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  font-weight: bolder;
 }
 
 .uploader-text, .tunnel-text {
@@ -159,10 +160,11 @@ page {
   opacity: 0.7;
   border: 1px dashed #000;
 }
+
 .title
 { margin-top: 100rpx;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   align-items: center;
   width: 650rpx;
   height: 50rpx;
@@ -172,6 +174,7 @@ page {
   /* border:1px solid rgb(106, 165, 253); */
   margin-left:25px; 
   margin-right:25px;
+  
 }
 
 .green,.red,.yellow
@@ -189,4 +192,5 @@ page {
   /* background-image: url('../../../figure/icon/cat.jpg'); */
   margin-left:25px; 
   margin-right:25px;
+
 }

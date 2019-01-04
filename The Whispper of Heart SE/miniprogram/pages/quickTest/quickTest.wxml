@@ -16,6 +16,6 @@
   </view>
  </view>
 
-<view>
-  <text bindtap="begin">开始测试！</text>
+<view class="mentalTest">
+  <text class="uploader-text" bindtap="begin">开始测试！</text>
 </view>

@@ -1,5 +1,37 @@
 /* miniprogram/pages/quickTest/quickTest.wxss */
 
+page {
+  background: rgba(73, 185, 129, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.uploader-text, .tunnel-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 32rpx;
+  font-weight:bold;
+  color: rgb(35, 59, 47);
+}
+
+.mentalTest {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: rgb(255,255,255);
+  opacity: 0.8;
+  border: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  justify-content: center;
+  text-align: center;
+
+}
 .phone_personal{
     width: 100%;
     color:rgb(34, 154, 181);
