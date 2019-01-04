@@ -6,7 +6,7 @@ page {
   flex-direction: column;
   justify-content: flex-start;
   background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546595453349&di=d6a313d60e6278d5c58937f275864074&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F01%2F29%2F63%2F59239c4469dc2_610.jpg');
-  background-position-y: 210rpx;
+  background-position-y: 200rpx;
   background-position-x: center;
   background-size: 120% 70%;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ page {
   align-items: center;
   width: 650rpx;
   height: 50rpx;
-  font-size: 35rpx;
+  font-size: 37rpx;
   color: rgb(35, 59, 47);
   /* background: rgba(255, 255, 255, 1); */
   /* border:1px solid rgb(106, 165, 253); */

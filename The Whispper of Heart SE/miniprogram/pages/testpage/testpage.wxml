@@ -7,9 +7,9 @@
   </view>
 
   <view class="explaination">
-    <view >
+    <!-- <view >
     <text bindtap="check">检查</text>
-    </view>
+    </view> -->
 
     <view>
     <text>选择严重程度，由1至5</text>
@@ -17,23 +17,23 @@
   </view>
 
   <view class = "answer">
-    <view>
+    <view class="answer0">
       <text bindtap="chooseAnswer" data-id = '1'>  1  </text>
     </view>
 
-    <view>
+    <view class="answer0">
       <text bindtap="chooseAnswer" data-id = '2'>  2  </text>
     </view>
 
-    <view>
+    <view class="answer0">
       <text bindtap="chooseAnswer" data-id = '3'>  3  </text>
     </view>
 
-    <view>
+    <view class="answer0">
       <text bindtap="chooseAnswer" data-id = '4'>  4  </text>
     </view>
 
-    <view>
+    <view class="answer0">
       <text bindtap="chooseAnswer" data-id = '5'>  5  </text>
     </view>
 
