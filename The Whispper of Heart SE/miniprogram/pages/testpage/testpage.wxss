@@ -1,6 +1,6 @@
 /* miniprogram/pages/testpage.wxss */
 .container{
-    background-color: #f7f7f7;
+    background-color:#f7f7f7;
     padding-top: 40rpx;
 }
 
@@ -22,6 +22,7 @@
 }
 
 .answer {
+  line-height:30px;
   background-color:  #f7f7f7;
   margin-top: 0rpx;
   height: contain;
@@ -33,7 +34,9 @@
   border-right: none;
   align-items: center;
   justify-content: left;
-  text-align: left;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(46, 94, 34);
 }
 
 .explaination {

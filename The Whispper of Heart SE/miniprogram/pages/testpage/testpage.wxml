@@ -18,23 +18,23 @@
 
   <view class = "answer">
     <view>
-      <text bindtap="chooseAnswer" data-id = '1'>1.</text>
+      <text bindtap="chooseAnswer" data-id = '1'>  1  </text>
     </view>
 
     <view>
-      <text bindtap="chooseAnswer" data-id = '2'>2.</text>
+      <text bindtap="chooseAnswer" data-id = '2'>  2  </text>
     </view>
 
     <view>
-      <text bindtap="chooseAnswer" data-id = '3'>3.</text>
+      <text bindtap="chooseAnswer" data-id = '3'>  3  </text>
     </view>
 
     <view>
-      <text bindtap="chooseAnswer" data-id = '4'>4.</text>
+      <text bindtap="chooseAnswer" data-id = '4'>  4  </text>
     </view>
 
     <view>
-      <text bindtap="chooseAnswer" data-id = '5'>5.</text>
+      <text bindtap="chooseAnswer" data-id = '5'>  5  </text>
     </view>
 
     <view>
